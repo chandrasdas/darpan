@@ -5,7 +5,7 @@ import path from 'path';
 // Define the content of your cPanel entry file
 const content = `
 async function loadApp() {
-    await import('./index.js');
+    await import('./build/index.js');
 }
 loadApp();
 `;
