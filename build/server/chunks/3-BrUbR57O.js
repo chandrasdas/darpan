@@ -5650,7 +5650,7 @@ const schema = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
 }, Symbol.toStringTag, { value: "Module" }));
 const poolConnection = mysql.createPool({
   host: private_env.DB_HOST || "rkmvvmmalda.org",
-  port: Number(private_env.DB_PORT) | 3306,
+  port: Number(private_env.DB_PORT) || 3306,
   user: private_env.DB_USER,
   password: private_env.DB_PASS,
   database: private_env.DB_NAME,
@@ -5696,4 +5696,4 @@ const stylesheets = [];
 const fonts = [];
 
 export { component, fonts, imports, index, _page_server_ts as server, server_id, stylesheets };
-//# sourceMappingURL=3-BvYSk7FX.js.map
+//# sourceMappingURL=3-BrUbR57O.js.map
