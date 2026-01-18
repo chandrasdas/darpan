@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+
+/* Optional: Customizing the primary color for the form */
+@theme {
+	--color-primary: var(--color-amber-500);
+	--color-primary-hover: var(--color-amber-600);
+
+	--color-secondary: var(--color-gray-100);
+	--color-secondary-hover: var(--color-gray-200);
+}
