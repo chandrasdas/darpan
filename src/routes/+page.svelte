@@ -18,7 +18,7 @@
 <div class="min-h-screen flex items-center justify-center bg-gray-50 px-4">
 	<div class="max-w-sm w-full space-y-8 bg-white p-8 rounded-sm shadow-lg">
 		<div>
-			<h2 class="text-center text-3xl font-extrabold text-gray-900">Sign in</h2>
+			<h2 class="text-center text-3xl font-extrabold text-gray-900">Sign innnn</h2>
 			<p class="mt-2 text-center text-sm text-gray-600">Enter your details belowwwwwwww</p>
 		</div>
 

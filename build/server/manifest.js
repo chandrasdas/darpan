@@ -10,11 +10,11 @@ return {
 	assets: new Set(["robots.txt"]),
 	mimeTypes: {".txt":"text/plain"},
 	_: {
-		client: {start:"_app/immutable/entry/start.Bl4EolZA.js",app:"_app/immutable/entry/app.B9KmOazS.js",imports:["_app/immutable/entry/start.Bl4EolZA.js","_app/immutable/chunks/Bhtw52VT.js","_app/immutable/chunks/FDJVdg6N.js","_app/immutable/chunks/D0R8c60d.js","_app/immutable/chunks/SFo0NkBZ.js","_app/immutable/entry/app.B9KmOazS.js","_app/immutable/chunks/FDJVdg6N.js","_app/immutable/chunks/CVHiStKa.js","_app/immutable/chunks/DCFGUy-H.js","_app/immutable/chunks/SFo0NkBZ.js","_app/immutable/chunks/D_xLUXZv.js","_app/immutable/chunks/D0R8c60d.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.CqTQKzRB.js",app:"_app/immutable/entry/app.D_talqh2.js",imports:["_app/immutable/entry/start.CqTQKzRB.js","_app/immutable/chunks/CWqQkBi6.js","_app/immutable/chunks/FDJVdg6N.js","_app/immutable/chunks/D0R8c60d.js","_app/immutable/chunks/SFo0NkBZ.js","_app/immutable/entry/app.D_talqh2.js","_app/immutable/chunks/FDJVdg6N.js","_app/immutable/chunks/CVHiStKa.js","_app/immutable/chunks/DCFGUy-H.js","_app/immutable/chunks/SFo0NkBZ.js","_app/immutable/chunks/D_xLUXZv.js","_app/immutable/chunks/D0R8c60d.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./chunks/0-C7dna2Tv.js')),
-			__memo(() => import('./chunks/1-D1JfTEBH.js')),
-			__memo(() => import('./chunks/2-2vsQZKqs.js')),
+			__memo(() => import('./chunks/1-CkOmGJ8T.js')),
+			__memo(() => import('./chunks/2-CDIfh7vN.js')),
 			__memo(() => import('./chunks/3-CthqK-xd.js'))
 		],
 		remotes: {
