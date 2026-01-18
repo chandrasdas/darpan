@@ -5,8 +5,8 @@ import * as schema from './schema';
 
 // Create a connection pool for better performance
 const poolConnection = mysql.createPool({
-	host: env.DB_HOST,
-	port: Number(env.DB_PORT),
+	host: env.DB_HOST || 'localhost',
+	port: Number(env.DB_PORT) | 3306,
 	user: env.DB_USER,
 	password: env.DB_PASS,
 	database: env.DB_NAME,

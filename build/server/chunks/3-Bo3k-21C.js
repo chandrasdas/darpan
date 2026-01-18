@@ -5649,8 +5649,8 @@ const schema = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   students
 }, Symbol.toStringTag, { value: "Module" }));
 const poolConnection = mysql.createPool({
-  host: private_env.DB_HOST,
-  port: Number(private_env.DB_PORT),
+  host: private_env.DB_HOST || "localhost",
+  port: Number(private_env.DB_PORT) | 3306,
   user: private_env.DB_USER,
   password: private_env.DB_PASS,
   database: private_env.DB_NAME,
@@ -5696,4 +5696,4 @@ const stylesheets = [];
 const fonts = [];
 
 export { component, fonts, imports, index, _page_server_ts as server, server_id, stylesheets };
-//# sourceMappingURL=3-CdiGnfPA.js.map
+//# sourceMappingURL=3-Bo3k-21C.js.map
