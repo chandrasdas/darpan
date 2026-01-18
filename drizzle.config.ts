@@ -1,13 +1,11 @@
 import { defineConfig } from 'drizzle-kit';
 
+if (!process.env.DATABASE_URL) throw new Error('DATABASE_URL is not set');
+
 export default defineConfig({
+	schema: './src/lib/server/db/schema.ts',
 	dialect: 'mysql',
-	schema: './src/lib/server/db/schema.ts', // verify your schema path
-	dbCredentials: {
-		host: '127.0.0.1',
-		port: 3307, // The tunnel port you just tested
-		user: 'rkmvvmm1_tuser',
-		password: 'Test%2026',
-		database: 'rkmvvmm1_test2026'
-	}
+	dbCredentials: { url: process.env.DATABASE_URL },
+	verbose: true,
+	strict: true
 });

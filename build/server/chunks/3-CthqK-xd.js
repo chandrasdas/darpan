@@ -5648,40 +5648,9 @@ const schema = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   classes,
   students
 }, Symbol.toStringTag, { value: "Module" }));
-const validateEnv = () => {
-  const required = ["DB_HOST", "DB_USER", "DB_PASS", "DB_NAME"];
-  const missing = required.filter((key) => !private_env[key]);
-  if (missing.length > 0) {
-    throw new Error(
-      `Missing database environment variables: ${missing.join(", ")}. Please check your .env file.`
-    );
-  }
-};
-validateEnv();
-const poolConnection = mysql.createPool({
-  host: private_env.DB_HOST || "rkmvvmmalda.org",
-  port: Number(private_env.DB_PORT) || 3306,
-  user: private_env.DB_USER,
-  password: private_env.DB_PASS,
-  database: private_env.DB_NAME,
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0,
-  enableKeepAlive: true,
-  keepAliveInitialDelay: 0
-});
-poolConnection.getConnection().then((conn) => {
-  console.log("✓ Database connection established successfully");
-  conn.release();
-}).catch((err) => {
-  console.error("✗ Database connection failed:", err.message);
-  console.error("  Host:", private_env.DB_HOST);
-  console.error("  Database:", private_env.DB_NAME);
-});
-poolConnection.on("error", (err) => {
-  console.error("Database pool error:", err);
-});
-const db = drizzle(poolConnection, { schema, mode: "default" });
+if (!private_env.DATABASE_URL) throw new Error("DATABASE_URL is not set");
+const client = mysql.createPool(private_env.DATABASE_URL);
+const db = drizzle(client, { schema, mode: "default" });
 const load = async ({ request }) => {
   try {
     const studentData = await db.select({
@@ -5719,4 +5688,4 @@ const stylesheets = [];
 const fonts = [];
 
 export { component, fonts, imports, index, _page_server_ts as server, server_id, stylesheets };
-//# sourceMappingURL=3-FIttTRkM.js.map
+//# sourceMappingURL=3-CthqK-xd.js.map

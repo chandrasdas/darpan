@@ -19,7 +19,7 @@
 	<div class="max-w-sm w-full space-y-8 bg-white p-8 rounded-sm shadow-lg">
 		<div>
 			<h2 class="text-center text-3xl font-extrabold text-gray-900">Sign in</h2>
-			<p class="mt-2 text-center text-sm text-gray-600">Enter your details below</p>
+			<p class="mt-2 text-center text-sm text-gray-600">Enter your details belowwwwwwww</p>
 		</div>
 
 		<form class="mt-8 space-y-6" method="POST">
